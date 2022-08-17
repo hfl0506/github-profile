@@ -1,0 +1,42 @@
+[
+  {
+    "login": "jeffersonsimaogoncalves",
+    "id": 411493,
+    "node_id": "MDQ6VXNlcjQxMTQ5Mw==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/411493?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jeffersonsimaogoncalves",
+    "html_url": "https://github.com/jeffersonsimaogoncalves",
+    "followers_url": "https://api.github.com/users/jeffersonsimaogoncalves/followers",
+    "following_url": "https://api.github.com/users/jeffersonsimaogoncalves/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jeffersonsimaogoncalves/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jeffersonsimaogoncalves/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jeffersonsimaogoncalves/subscriptions",
+    "organizations_url": "https://api.github.com/users/jeffersonsimaogoncalves/orgs",
+    "repos_url": "https://api.github.com/users/jeffersonsimaogoncalves/repos",
+    "events_url": "https://api.github.com/users/jeffersonsimaogoncalves/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jeffersonsimaogoncalves/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  {
+    "login": "sergiss",
+    "id": 2095915,
+    "node_id": "MDQ6VXNlcjIwOTU5MTU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2095915?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sergiss",
+    "html_url": "https://github.com/sergiss",
+    "followers_url": "https://api.github.com/users/sergiss/followers",
+    "following_url": "https://api.github.com/users/sergiss/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sergiss/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sergiss/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sergiss/subscriptions",
+    "organizations_url": "https://api.github.com/users/sergiss/orgs",
+    "repos_url": "https://api.github.com/users/sergiss/repos",
+    "events_url": "https://api.github.com/users/sergiss/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sergiss/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+]

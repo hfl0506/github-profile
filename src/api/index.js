@@ -1,18 +1,41 @@
-export async function getUser(user) {
-  const url = `https://api.github.com/users/${user}`;
+const BASE_URL = 'https://api.github.com/users';
+
+async function httpFetch(url) {
   const resp = await fetch(url);
-  const data = await resp.json();
+  return resp.json();
+}
+
+export async function getUser(user) {
+  const url = `${BASE_URL}/${user}`;
+
+  const data = await httpFetch(url);
+
   const skimmedData = {
     avatar_url: data.avatar_url,
     followers: data.followers,
-    followers_url: data.followers_url,
     following: data.following,
-    following_url: data.following_url,
     name: data.name,
     login: data.login,
-    url: data.url,
     bio: data.bio,
   };
-  console.log(skimmedData);
+
   return skimmedData;
+}
+
+export async function getUserFollowers(user) {
+  const url = `${BASE_URL}/${user}/followers`;
+
+  return await httpFetch(url);
+}
+
+export async function getUserFollowing(user) {
+  const url = `${BASE_URL}/${user}/following`;
+
+  return await await httpFetch(url);
+}
+
+export async function getStarredRepos(user) {
+  const url = `${BASE_URL}/${user}/starred`;
+
+  return await httpFetch(url);
 }

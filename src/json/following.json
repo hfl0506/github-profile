@@ -1,0 +1,42 @@
+[
+  {
+    "login": "ry",
+    "id": 80,
+    "node_id": "MDQ6VXNlcjgw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/80?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ry",
+    "html_url": "https://github.com/ry",
+    "followers_url": "https://api.github.com/users/ry/followers",
+    "following_url": "https://api.github.com/users/ry/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ry/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ry/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ry/subscriptions",
+    "organizations_url": "https://api.github.com/users/ry/orgs",
+    "repos_url": "https://api.github.com/users/ry/repos",
+    "events_url": "https://api.github.com/users/ry/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ry/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  {
+    "login": "jherr",
+    "id": 22392,
+    "node_id": "MDQ6VXNlcjIyMzky",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22392?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jherr",
+    "html_url": "https://github.com/jherr",
+    "followers_url": "https://api.github.com/users/jherr/followers",
+    "following_url": "https://api.github.com/users/jherr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jherr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jherr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jherr/subscriptions",
+    "organizations_url": "https://api.github.com/users/jherr/orgs",
+    "repos_url": "https://api.github.com/users/jherr/repos",
+    "events_url": "https://api.github.com/users/jherr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jherr/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+]

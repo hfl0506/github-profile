@@ -1,22 +1,24 @@
 import React, {useState, useEffect} from 'react';
-import {Text, View, Button, TextInput, StyleSheet} from 'react-native';
+import {Text, View, TextInput, StyleSheet} from 'react-native';
 import ProfileCard from '../component/ProfileCard';
 import NotFound from '../component/NotFound';
 import {getUser} from '../api/index';
+import {debounce} from 'lodash';
 
-function HomeScreen({navigation}) {
+function HomeScreen() {
   const [search, setSearch] = useState('');
   const [user, setUser] = useState(null);
 
   const onSearch = async text => {
-    let lowercaseText = text.toLowerCase();
-    setSearch(lowercaseText);
-    const targetUser = await getUser(lowercaseText);
-    setUser(targetUser);
+    setSearch(text);
+    handleTextChange(search);
   };
+  const handleTextChange = debounce(async text => {
+    const target = await getUser(text);
+    setUser(target);
+  }, 200);
 
-  useEffect(() => {}, []);
-
+  useEffect(() => {}, [user]);
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Search Github User</Text>
@@ -25,11 +27,7 @@ function HomeScreen({navigation}) {
         onChangeText={text => onSearch(text)}
         style={styles.input}
       />
-      <Button
-        title="Go to Follwer"
-        onPress={() => navigation.navigate('Follower')}
-      />
-      {user ? <ProfileCard {...user} /> : <NotFound />}
+      {user ? <ProfileCard user={user} /> : <NotFound />}
     </View>
   );
 }
@@ -51,6 +49,7 @@ const styles = StyleSheet.create({
     padding: 10,
     width: 250,
     borderRadius: 4,
+    backgroundColor: 'white',
   },
 });
 
