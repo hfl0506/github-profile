@@ -26,6 +26,7 @@ function HomeScreen() {
         value={search}
         onChangeText={text => onSearch(text)}
         style={styles.input}
+        autoCapitalize="none"
       />
       {user ? <ProfileCard user={user} /> : <NotFound />}
     </View>
